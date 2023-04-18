@@ -2,9 +2,7 @@ from bs4 import BeautifulSoup
 from tournament_scraping import create_tournament_data_from_url, compile_bout_dataframe_from_tournament_data
 from tournament_data import TournamentData
 
-list_of_urls = ['https://fie.org/competitions/2020/771', 
-                'https://fie.org/competitions/2021/1070',
-                'https://fie.org/competitions/2021/92']
+list_of_urls = ['https://fie.org/competitions/2023/151']
 
 for tournament_url in list_of_urls:
     print("Tournament URL for lookup: {}".format(tournament_url))

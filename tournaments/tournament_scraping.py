@@ -13,7 +13,7 @@ from helper.soup_scraping import get_json_var_from_script
 from helper.caching_methods import load_all_cached_fencers_rankings, save_dict_to_cache
 
 
-CACHE_FILENAME = 'tournaments/tournament_cache.txt'
+CACHE_FILENAME = "tournaments/tournament_cache.txt"
 
 
 # =--------------------------------------=

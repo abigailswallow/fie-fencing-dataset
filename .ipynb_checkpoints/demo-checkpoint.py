@@ -18,7 +18,7 @@ test_results_by_division = True
 if testing_single_tournament:
     print("\n\n Reading and printing a single tournament")
     print("----------------------------------------\n\n")
-    tournament_url = 'https://fie.org/competitions/2023/151'
+    tournament_url = 'https://fie.org/competitions/2020/771'
     # tournament_url = 'https://fie.org/competitions/2016/941'
     print("Tournament URL for lookup: {}".format(tournament_url))
     has_data, tournament = create_tournament_data_from_url(tournament_url)
@@ -99,9 +99,9 @@ if test_results_by_division:
 
 
 
-    weapon = 's'
-    gender = 'f'
-    category = 's'
+    weapon = 'f'
+    gender = 'm'
+    category = ''
 
 
     weapon_dict = {'f': "foil", 'e': 'epee', 's': 'sabre'}
@@ -115,7 +115,7 @@ if test_results_by_division:
 
     tourn_df, bout_df, fencers_bio_df, fencers_rankings_df = get_results_for_division(
         weapon=[weapon], gender=[gender], category=category, max_events=10, 
-        use_tournament_cache=False, use_fencer_data_cache=False, use_fencer_req_cache=False)
+        use_tournament_cache=True, use_fencer_data_cache=True, use_fencer_req_cache=True)
 
     print("\n\n")
     time.sleep(2)
